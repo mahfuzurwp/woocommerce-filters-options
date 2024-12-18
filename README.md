@@ -36,3 +36,31 @@ add_filter( 'woocommerce_product_title', 'custom_product_title', 10, 2 );
 function custom_product_title( $title, $product ) {
     return 'Custom ' . $title;
 }
+```
+Find more filters in the /filters/ folder.
+
+## Options
+
+Options are persistent settings stored in the WordPress database. They control core WooCommerce functionality.
+
+### Example:
+**Option**: `woocommerce_currency`
+Fetch the store currency:
+```php
+$currency = get_option( 'woocommerce_currency' );
+```
+Find more options in the /options/ folder.
+
+## Examples
+
+Want to see filters and options in action? Check the /examples/ folder for step-by-step guides.
+
+## Contributing
+
+We welcome contributions! To contribute:
+
+1.	Fork this repository.
+2.	Add your filters/options/examples.
+3.	Submit a pull request.
+
+**We hope this repository becomes a valuable resource for WooCommerce developers! Whether you’re here to learn, implement, or contribute, your involvement helps make the WooCommerce community even stronger.**
